@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>live search example by layth morrar</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    
+    <script src="src/js/livesearch.js"></script>
+</head>
+
+<body>
+
+
+    <form class="form-horizontal">
+
+        <div class="form-group has-success parte" data-partename="User Name">
+
+            <label class="col-xs-2 control-label" for="inputSuccess">Username</label>
+
+            <div class="col-xs-10">
+
+                <input type="text" id="inputSuccess" class="form-control" placeholder="Search here">
+
+                <span class="help-block">Username is available</span>
+
+            </div>
+
+        </div>
+
+        <div class="form-group has-warning parte" data-partename="User Password">
+
+            <label class="col-xs-2 control-label" for="inputWarning">Password</label>
+
+            <div class="col-xs-10">
+
+                <input type="password" id="inputWarning" class="form-control" placeholder="Input with warning">
+
+                <span class="help-block">Password strength: Weak</span>
+
+            </div>
+
+        </div>
+
+        <div class="form-group has-error parte" data-partename="User Email">
+
+            <label class="col-xs-2 control-label" for="inputError">Email</label>
+
+            <div class="col-xs-10">
+
+                <input type="email" id="inputError" class="form-control" placeholder="Input with error">
+
+                <span class="help-block">Please enter a valid email address</span>
+
+            </div>
+
+        </div>
+
+    </form>
+
+
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $("#inputSuccess").livesearch({highlightStyle:'background-color:yellow;'});
+        });
+    </script>
+
+
+</body>
+</html>
